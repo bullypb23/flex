@@ -1,25 +1,25 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { Row, Container, Navbar, Nav } from "react-bootstrap";
-import PhoneIcon from '@material-ui/icons/Phone';
+import { Row, Navbar, Nav } from "react-bootstrap";
+import { FaPhoneSquareAlt } from "@react-icons/all-files/fa/FaPhoneSquareAlt";
 
 const Header = () => (
-  <Navbar variant="light" expand="lg" id="navbar">
-    <Container className="container">
-      <Link to="/">
+  <Navbar variant="light" expand="lg" id="navbar" sticky="top">
+    <Row className="header-container">
+      <Link to="/" style={{ margin: '0 20px' }}>
         <Navbar.Brand>
           <StaticImage src="../images/logo.jpg" alt="Flex Moving Logo" width={90} />
         </Navbar.Brand>
       </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse>
-        <Container className="navbar-container">
-          <Row>
-            <PhoneIcon />Phone number
+        <div className="navbar-container">
+          <Row className="icon-wrapper">
+            <FaPhoneSquareAlt style={{ fontSize: '28px', marginRight: '20px' }} />212-212-212
           </Row>
           <Row>
-            <Nav>
+            <Nav className="links-wrapper">
               <Link to="/" className="link-items">
                 <Nav.Item>
                   Home
@@ -42,9 +42,9 @@ const Header = () => (
               </Link>
             </Nav>
           </Row>
-        </Container>
+        </div>
       </Navbar.Collapse>
-    </Container>
+    </Row>
   </Navbar>
 );
 

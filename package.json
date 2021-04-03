@@ -6,9 +6,10 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
-    "@material-ui/icons": "^4.11.2",
+    "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^4.6.0",
     "gatsby": "^3.1.2",
+    "gatsby-image": "^3.2.0",
     "gatsby-plugin-gatsby-cloud": "^2.1.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^1.1.2",
@@ -22,7 +23,8 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"
