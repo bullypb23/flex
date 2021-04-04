@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { Row, Navbar, Nav } from "react-bootstrap";
+import { Row, Navbar, Nav, Container } from "react-bootstrap";
 import { FaPhoneSquareAlt } from "@react-icons/all-files/fa/FaPhoneSquareAlt";
 
 const Header = () => (
-  <Navbar variant="light" expand="lg" id="navbar" sticky="top">
-    <Row className="header-container">
+  <Navbar variant="light" expand="md" id="navbar" sticky="top">
+    <Container fluid="xl" className="header-container">
       <Link to="/" style={{ margin: '0 20px' }}>
         <Navbar.Brand>
           <StaticImage src="../images/logo.jpg" alt="Flex Moving Logo" width={90} />
@@ -44,7 +44,7 @@ const Header = () => (
           </Row>
         </div>
       </Navbar.Collapse>
-    </Row>
+    </Container>
   </Navbar>
 );
 

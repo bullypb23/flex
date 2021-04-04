@@ -16,16 +16,16 @@ const IndexPage = () => {
         <div className="home-page-overflow">
           <h3>Looking for amazing moving experience?</h3>
           <Box>
-            <Box className="form-control-wrapper">
+            <Box className="form-control-container">
               <TextField label="Name" className="input" />
             </Box>
-            <Box className="form-control-wrapper">
+            <Box className="form-control-container">
               <TextField label="Email" className="input" />
             </Box>
-            <Box className="form-control-wrapper">
+            <Box className="form-control-container">
               <TextareaAutosize placeholder="Message" className="input textarea" rowsMin={3} />
             </Box>
-            <Box className="form-control-wrapper">
+            <Box className="form-control-container">
               <Button style={{ backgroundColor: '#055793', color: '#fff' }} variant="contained">Send message</Button>
             </Box>
           </Box>
