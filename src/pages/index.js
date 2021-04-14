@@ -23,7 +23,7 @@ const IndexPage = () => {
               <TextField label="Email" className="input" />
             </Box>
             <Box className="form-control-container">
-              <TextareaAutosize placeholder="Message" className="input textarea" rowsMin={3} />
+              <TextareaAutosize style={{ padding: '5px' }} placeholder="Message" className="input textarea" rowsMin={3} />
             </Box>
             <Box className="form-control-container">
               <Button style={{ backgroundColor: '#055793', color: '#fff' }} variant="contained">Send message</Button>

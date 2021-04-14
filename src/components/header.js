@@ -1,51 +1,65 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { Row, Navbar, Nav, Container } from "react-bootstrap";
 import { FaPhoneSquareAlt } from "@react-icons/all-files/fa/FaPhoneSquareAlt";
+import { Box } from '@material-ui/core';
+import { Navbar, NavbarToggler, Collapse, Nav, NavItem, Container, UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu } from 'reactstrap';
+import { FaHome } from "@react-icons/all-files/fa/FaHome";
+import { FaStoreAlt } from "@react-icons/all-files/fa/FaStoreAlt";
+import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
+import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 
-const Header = () => (
-  <Navbar variant="light" expand="md" id="navbar" sticky="top">
-    <Container fluid="xl" className="header-container">
-      <Link to="/" style={{ margin: '0 20px' }}>
-        <Navbar.Brand>
-          <StaticImage src="../images/logo.jpg" alt="Flex Moving Logo" width={90} />
-        </Navbar.Brand>
-      </Link>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse>
-        <div className="navbar-container">
-          <Row className="icon-wrapper">
-            <FaPhoneSquareAlt style={{ fontSize: '28px', marginRight: '20px' }} />212-212-212
-          </Row>
-          <Row>
-            <Nav className="links-wrapper">
-              <Link to="/" className="link-items">
-                <Nav.Item>
-                  Home
-                </Nav.Item>
-              </Link>
-              <Link to="/our-story" className="link-items">
-                <Nav.Item>
-                  Our story
-                </Nav.Item>
-              </Link>
-              <Link to="/moving-services" className="link-items">
-                <Nav.Item>
-                  Moving services
-                </Nav.Item>
-              </Link>
-              <Link to="/contact" className="link-items">
-                <Nav.Item>
-                  Contact
-                </Nav.Item>
-              </Link>
-            </Nav>
-          </Row>
-        </div>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-);
+const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <Navbar expand="md" id="navbar">
+      <Container fluid className="header-container">
+        <Box>
+          <Link to="/" style={{ margin: '0 20px' }}>
+            <StaticImage src="../images/logo.jpg" alt="Flex Moving Logo" width={90} />
+          </Link>
+        </Box>
+        <NavbarToggler onClick={() => setOpen(!open)} />
+        <Collapse navbar isOpen={open} className="navbar-container">
+          <Nav>
+            <NavItem>
+              <Link to="/" className="link-items">Home</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/our-story" className="link-items">Our story</Link>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret style={{ color: '#000', textTransform: 'uppercase' }}>
+                Moving services
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem tag={Link} to="/moving-services/local" className="dropdown-item">
+                  <FaHome style={{ marginRight: '5px' }} />
+                  Local
+                </DropdownItem>
+                <DropdownItem tag={Link} to="/moving-services/commercial" className="dropdown-item">
+                  <FaStoreAlt style={{ marginRight: '5px' }} />
+                  Commercial
+                </DropdownItem>
+                <DropdownItem tag={Link} to="/moving-services/long-distance" className="dropdown-item">
+                  <FaFlagUsa style={{ marginRight: '5px' }} />
+                  Long distance
+                </DropdownItem>
+                <DropdownItem tag={Link} to="/moving-services/storage" className="dropdown-item">
+                  <FaWarehouse style={{ marginRight: '5px' }} />
+                  Storage
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <NavItem>
+              <Link to="/contact" className="link-items">Contact</Link>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Container>
+    </Navbar>
+  )
+}
 
 export default Header;

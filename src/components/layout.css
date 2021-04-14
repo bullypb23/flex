@@ -40,19 +40,22 @@ a:hover {
 }
 .navbar-container {
   width: 100%;
-  flex-direction: column;
-  align-items: flex-end !important;
-  margin-left: 0;
-  margin-right: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 .link-items {
   display: block;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
   color: #000;
 }
+.dropdown-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .link-items:hover {
-  color: #444;
+  color: #055793;
 }
 .icon-wrapper {
   display: flex;
@@ -124,6 +127,7 @@ a:hover {
 .services-navigation {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 10px 0;
 }
 .service-nav {
