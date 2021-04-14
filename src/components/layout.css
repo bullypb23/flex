@@ -22,6 +22,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 a:hover {
   text-decoration: none;
@@ -54,17 +55,8 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
 }
-.link-items:hover {
+.link-items:hover, .dropdown-item:hover {
   color: #055793;
-}
-.icon-wrapper {
-  display: flex;
-  justify-content: flex-end;
-}
-.links-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
 }
 .home-page-wrapper {
   width: 100%;
@@ -72,6 +64,7 @@ a:hover {
   max-width: 100vw;
   background: url("../images/home-page.jpeg");
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 .home-page-heading {
@@ -157,6 +150,33 @@ a:hover {
 .footer {
   width: 100%;
   background-color: #444;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+  padding: 20px;
+}
+.footer-info {
+  display: flex;
+}
+.footer-company {
+  color: #fff;
+  padding: 10px;
+}
+.footer-paragraph {
+  font-size: 0.8rem !important;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-top: 1px solid #fff;
+  color: #fff;
+  margin: 0 50px;
+}
+.footer-links {
+  padding:  0 10px;
 }
 @media only screen and (min-width: 768px) {
   .header-container {
