@@ -147,6 +147,48 @@ a:hover {
 .service-nav a svg {
   font-size: 50px;
 }
+.service-image {
+  width: 100%;
+  max-height: 600px;
+}
+.service-page {
+  position: relative;
+  /* max-height: 600px; */
+  min-height: 700px;
+  background-size: cover;
+  background-position-y: -200px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-info {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  margin: 50px 0;
+}
+.service-heading {
+  font-size: 4rem;
+  font-style: italic;
+  text-align: center;
+}
+.service-paragraph {
+  text-align: center;
+}
+.service-reviews {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  margin: 20px 0;
+}
+.review-container {
+  padding: 20px;
+  text-align: center;
+}
+.carousel-container {
+  transition: transform 1s ease-in-out !important;
+}
 .footer {
   width: 100%;
   background-color: #444;
