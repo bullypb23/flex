@@ -110,6 +110,7 @@ a:hover {
   display: flex;
   justify-content: center;
   padding: 10px;
+  max-width: 400px;
 }
 .input {
   width: 100%;
@@ -188,6 +189,15 @@ a:hover {
 }
 .carousel-container {
   transition: transform 1s ease-in-out !important;
+}
+.map-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 80%;
+  left: 10%;
+  position: relative;
 }
 .footer {
   width: 100%;
