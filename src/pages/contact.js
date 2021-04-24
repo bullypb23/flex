@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Map from '../components/map';
-import { Box, Typography, TextField, Button, TextareaAutosize } from '@material-ui/core';
+import Form from '../components/form';
+import { Box, Typography } from '@material-ui/core';
 import logo from '../images/logo-transparent.png'
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleFormSubmit = () => {
-    console.log(name, email, message);
-  }
 
   return (
     <Layout>
@@ -20,33 +14,7 @@ const Contact = () => {
       <Box className="map-wrapper">
         <Box style={{ flex: '1 1 50%' }}>
           <Typography style={{ fontSize: '2rem' }}>Have any question? Ask us anything</Typography>
-          <Box>
-            <Box className="form-control-container">
-              <TextField label="Name" className="input" value={name} onChange={(event) => setName(event.target.value)} />
-            </Box>
-            <Box className="form-control-container">
-              <TextField label="Email" className="input" value={email} onChange={(event) => setEmail(event.target.value)} />
-            </Box>
-            <Box className="form-control-container">
-              <TextareaAutosize
-                style={{ padding: '5px' }}
-                placeholder="Message"
-                className="input textarea"
-                rowsMin={3}
-                onChange={(event) => setMessage(event.target.value)}
-                value={message}
-              />
-            </Box>
-            <Box className="form-control-container">
-              <Button
-                style={{ backgroundColor: '#055793', color: '#fff' }}
-                variant="contained"
-                onClick={handleFormSubmit}
-              >
-                Send message
-              </Button>
-            </Box>
-          </Box>
+          <Form />
         </Box>
         <Box style={{ flex: '1 1 50%' }}>
           <Map />
