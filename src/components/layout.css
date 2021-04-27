@@ -38,6 +38,8 @@ a:hover {
 }
 .header-container {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap !important;
 }
 .navbar-container {
   width: 100%;
@@ -197,13 +199,15 @@ a:hover {
 }
 .info-container {
   width: 100%;
-  padding: 30px;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
 }
 .info-heading {
   font-size: 2.5rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .map-wrapper {
   padding: 20px;
@@ -244,6 +248,10 @@ a:hover {
 }
 .footer-links {
   padding:  0 10px;
+}
+.active:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 @media only screen and (min-width: 768px) {
   .header-container {

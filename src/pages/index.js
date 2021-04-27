@@ -23,7 +23,7 @@ const IndexPage = () => {
       <ServicesNavigation />
       <Box className="info-container">
         <Box style={{ width: '80%' }}>
-          <h1 className="info-heading"><FaInfoCircle style={{ marginRight: '10px' }} />COVID - 19 RESPONSES</h1>
+          <h1 className="info-heading"><FaInfoCircle style={{ marginRight: '10px', color: '#055793' }} />COVID - 19 RESPONSES</h1>
           <Typography className="service-paragraph">As the country responds to the pandemic of COVID-19, our thoughts are with the people affected and the medical professionals working around the clock to help those most in need. At Flex Moving Company, we are working to do our part as an ESSENTIAL BUSINESS by ensuring the safety of our employees, striving to protect the health and well-being of the communities in which we operate and providing relocation services and resources to our customers to make their move as safe as possible. We have taken great care in following the guidelines provided by the CDC to ensure our facilities, staff and equipment are safe and sanitary.</Typography>
         </Box>
       </Box>

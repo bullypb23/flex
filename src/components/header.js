@@ -13,50 +13,57 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Navbar expand="md" id="navbar">
+    <Navbar expand="md" id="navbar" style={{ padding: '5px 0 0 0' }}>
       <Container fluid className="header-container">
-        <Box>
-          <Link to="/" style={{ margin: '0 20px' }}>
-            <StaticImage src="../images/logo.jpg" alt="Flex Moving Logo" width={90} />
-          </Link>
+        <Box style={{ flex: '1 1 100%', textAlign: 'right' }}>
+          <a href="tel:+4258704368" style={{ color: '#000', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+            <FaPhoneSquareAlt style={{ marginRight: '10px' }} />425-870-4368
+          </a>
         </Box>
-        <NavbarToggler onClick={() => setOpen(!open)} />
-        <Collapse navbar isOpen={open} className="navbar-container">
-          <Nav>
-            <NavItem>
-              <Link to="/" className="link-items">Home</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/our-story" className="link-items">Our story</Link>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret style={{ color: '#000', textTransform: 'uppercase' }}>
-                Moving services
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem tag={Link} to="/moving-services/local" className="dropdown-item">
-                  <FaHome style={{ marginRight: '5px' }} />
-                  Local
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/moving-services/commercial" className="dropdown-item">
-                  <FaStoreAlt style={{ marginRight: '5px' }} />
-                  Commercial
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/moving-services/long-distance" className="dropdown-item">
-                  <FaFlagUsa style={{ marginRight: '5px' }} />
-                  Long distance
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/moving-services/storage" className="dropdown-item">
-                  <FaWarehouse style={{ marginRight: '5px' }} />
-                  Storage
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-            <NavItem>
-              <Link to="/contact" className="link-items">Contact</Link>
-            </NavItem>
-          </Nav>
-        </Collapse>
+        <Box style={{ flex: '1 1 100%', display: 'flex' }}>
+          <Box>
+            <Link to="/" style={{ margin: '0 20px' }}>
+              <StaticImage src="../images/logo.jpg" alt="Flex Moving Logo" width={70} style={{ top: '-10px' }} />
+            </Link>
+          </Box>
+          <NavbarToggler onClick={() => setOpen(!open)} />
+          <Collapse navbar isOpen={open} className="navbar-container">
+            <Nav>
+              <NavItem>
+                <Link to="/" className="link-items">Home</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/our-story" className="link-items">Our story</Link>
+              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret style={{ color: '#000', textTransform: 'uppercase' }}>
+                  Moving services
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem tag={Link} to="/moving-services/local" className="dropdown-item">
+                    <FaHome style={{ marginRight: '5px' }} />
+                    Local
+                  </DropdownItem>
+                  <DropdownItem tag={Link} to="/moving-services/commercial" className="dropdown-item">
+                    <FaStoreAlt style={{ marginRight: '5px' }} />
+                    Commercial
+                  </DropdownItem>
+                  <DropdownItem tag={Link} to="/moving-services/long-distance" className="dropdown-item">
+                    <FaFlagUsa style={{ marginRight: '5px' }} />
+                    Long distance
+                  </DropdownItem>
+                  <DropdownItem tag={Link} to="/moving-services/storage" className="dropdown-item">
+                    <FaWarehouse style={{ marginRight: '5px' }} />
+                    Storage
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              <NavItem>
+                <Link to="/contact" className="link-items">Contact</Link>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Box>
       </Container>
     </Navbar>
   )
