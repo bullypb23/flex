@@ -20,6 +20,9 @@ const IndexPage = () => {
           <Form />
         </div>
       </div>
+      <Box className="services-nav-heading">
+        <Typography>We offer you next type of services</Typography>
+      </Box>
       <ServicesNavigation />
       <Box className="info-container">
         <Box style={{ width: '80%' }}>

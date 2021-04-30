@@ -84,6 +84,7 @@ a:hover {
 .home-page-heading h3 {
   font-size: 50px;
   font-weight: 700;
+  font-style: italic;
 }
 .home-page-img {
   min-width: 100%;
@@ -131,15 +132,20 @@ a:hover {
   flex-wrap: wrap;
   padding: 10px 0;
 }
+.services-nav-heading {
+  padding: 20px 0;
+}
+.services-nav-heading > p {
+  font-size: 2rem;
+  text-align: center;
+}
 .service-nav {
   min-height: 100px;
   padding: 15px 25px;
 }
 .service-nav:hover {
-  -webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.15);
-  box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.15);
-  border-radius: 10px;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
 }
 .service-nav a {
   font-size: 32px;
@@ -149,8 +155,8 @@ a:hover {
   color: #000;
   cursor: pointer;
 }
-.service-nav a:hover {
-  color: #444;
+.service-nav:hover > a {
+  color: #055793;
 }
 .service-nav a svg {
   font-size: 50px;
@@ -253,12 +259,6 @@ a:hover {
   text-decoration: underline;
   color: #fff;
 }
-@media only screen and (min-width: 768px) {
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 .spinner-wrapper {
   width: 100vw;
   height: 100vh;
@@ -359,3 +359,83 @@ a:hover {
   opacity: 0;
   }
  }
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .home-page-heading {
+    position: relative;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+  }
+  .home-page-heading h1 {
+    text-align: center;
+  }
+  .home-page-heading h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .home-page-overflow {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+  }
+  .services-nav-heading {
+    padding: 20px 10px;
+  }
+  .services-navigation {
+    flex-direction: column;
+  }
+  .service-page {
+    min-height: 500px;
+  }
+  .map-wrapper {
+    padding: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .MuiBox-root-13 {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-header {
+    text-align: center;
+  }
+  .contact-content {
+    padding-left: 20px;
+  }
+  .form-control-container {
+    min-width: 300px;
+  }
+  .footer-container {
+    flex-direction: column-reverse;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}

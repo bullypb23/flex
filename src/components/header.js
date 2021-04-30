@@ -8,14 +8,16 @@ import { FaHome } from "@react-icons/all-files/fa/FaHome";
 import { FaStoreAlt } from "@react-icons/all-files/fa/FaStoreAlt";
 import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
 import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
+import { FaBox } from "@react-icons/all-files/fa/FaBox";
+import useWindowSize from '../utils/useWindowSize';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-
+  const { width } = useWindowSize();
   return (
     <Navbar expand="md" id="navbar" style={{ padding: '5px 0 0 0' }}>
       <Container fluid className="header-container">
-        <Box style={{ flex: '1 1 100%', textAlign: 'right' }}>
+        <Box style={{ flex: '1 1 100%', textAlign: 'right', paddingRight: width < 768 ? '10px' : '0' }}>
           <a href="tel:+4258704368" style={{ color: '#000', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
             <FaPhoneSquareAlt style={{ marginRight: '10px' }} />425-870-4368
           </a>
@@ -55,6 +57,10 @@ const Header = () => {
                   <DropdownItem tag={Link} to="/moving-services/storage" className="dropdown-item">
                     <FaWarehouse style={{ marginRight: '5px' }} />
                     Storage
+                  </DropdownItem>
+                  <DropdownItem tag={Link} to="/moving-services/packing" className="dropdown-item">
+                    <FaBox style={{ marginRight: '5px' }} />
+                    Packing and unpacking
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

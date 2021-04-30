@@ -2,6 +2,7 @@ import local from '../images/local.jpeg';
 import commercial from '../images/commercial.jpg';
 import longDistance from '../images/long-distance.jpg';
 import storage from '../images/storage.jpg';
+import packing from '../images/packing.jpg';
 
 export const data = {
   local: {
@@ -28,5 +29,11 @@ export const data = {
     img: storage,
     title: 'Storage services',
     name: 'Storage service',
+  },
+  packing: {
+    text: 'One of the most delicate procedures that you are going to have to go through when moving is packing and unpacking. Obviously, this should not be something too difficult to complete. However, the issue with this is the fact that you need to pack your items properly. Otherwise, they will stand a great chance of suffering damage while moving. After all, the only thing standing between your items damaging and them surviving the move is the packaging.With the help from the Flex movers, your items will be safe throughout the move. Ultimately, they will arrive in their new home in one piece, ready for use. So, go ahead and give us a call. Flex Moving professionals will play an important role in your relocation process. Our experienced packers have a wide range of skills that allow us to pack all of your items without causing any disturbances for you and your family members. Should you choose to trust us with your precious belongings, you would not only get a team with vast experience! You would also get high-quality packing supplies. If you have no need for it, our team doesn’t have to pack up your entire home – we can only pack those items you have the most trouble with.Unpacking the new place could be a task that takes you days or weeks to complete depending on your schedule. It could also take less than a day when you choose our team to help you get settled! The Flex Moving Company team is here to help with every aspect of your unpacking. Our moving and packing services are here for you! Our packers will not burden you with the additional work of cleaning and getting rid of packing supplies Dallas. Instead, we will arrive with the right amount of materials, all of which will be utilized during the moving process. If there are any leftovers, we’ll ensure they are taken care of by our team, leaving you to enjoy your new home without any eyesores.',
+    img: packing,
+    title: 'Packing and unpacking services',
+    name: 'Packing and unpacking',
   }
 }

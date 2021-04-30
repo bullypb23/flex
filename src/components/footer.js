@@ -27,7 +27,7 @@ const Footer = () => {
           </Box>
           <Box>
             <Typography style={{ color: '#fff' }}>- Moving services</Typography>
-            <Box style={{ paddingLeft: '10px' }}>
+            <Box style={{ paddingLeft: '10px' }} className="footer-nav">
               <Link to="/moving-services/local" className="footer-links active">Local</Link>
               <Link to="/moving-services/commercial" className="footer-links active">Commercial</Link>
               <Link to="/moving-services/long-distance" className="footer-links active">Long distance</Link>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, TextField, TextareaAutosize, Button, Typography, Alert } from '@material-ui/core';
+import { Box, TextField, TextareaAutosize, Button, Typography } from '@material-ui/core';
 import { toast } from 'react-toastify';
 import emailjs from 'emailjs-com';
 import Spinner from './spinner';
@@ -44,7 +44,7 @@ const Form = () => {
   }
 
   return (
-    <Box>
+    <Box className="form-wrapper">
       <Box className="form-control-container">
         <TextField label="Name" className="input" value={name} onChange={(event) => setName(event.target.value)} />
       </Box>

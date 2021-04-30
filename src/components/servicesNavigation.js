@@ -4,6 +4,7 @@ import { FaHome } from "@react-icons/all-files/fa/FaHome";
 import { FaStoreAlt } from "@react-icons/all-files/fa/FaStoreAlt";
 import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
 import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
+import { FaBox } from '@react-icons/all-files/fa/FaBox';
 import { Box } from "@material-ui/core";
 
 const ServicesNavigation = () => {
@@ -31,6 +32,12 @@ const ServicesNavigation = () => {
         <Link to="/moving-services/storage">
           <Box>Storage</Box>
           <FaWarehouse />
+        </Link>
+      </Box>
+      <Box className="service-nav">
+        <Link to="/moving-services/packing">
+          <Box>Packing</Box>
+          <FaBox />
         </Link>
       </Box>
     </div>
