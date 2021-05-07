@@ -9,33 +9,30 @@ import { FaStoreAlt } from "@react-icons/all-files/fa/FaStoreAlt";
 import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
 import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 import { FaBox } from "@react-icons/all-files/fa/FaBox";
-import useWindowSize from '../utils/useWindowSize';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const { width } = useWindowSize();
   return (
     <Navbar expand="md" id="navbar" style={{ padding: '5px 0 0 0' }}>
       <Container fluid className="header-container">
-        <Box style={{ flex: '1 1 100%', textAlign: 'right', paddingRight: width < 768 ? '10px' : '0' }}>
+        <Box style={{ flex: '1 1 100%', textAlign: 'right', paddingRight: '10px' }}>
           <a href="tel:+4258704368" style={{ color: '#000', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
             <FaPhoneSquareAlt style={{ marginRight: '10px' }} />425-870-4368
           </a>
         </Box>
-        <Box style={{ flex: '1 1 100%', display: 'flex' }}>
+        <Box className="nav-wrapper">
           <Box>
             <Link to="/" style={{ margin: '0 20px' }}>
               <StaticImage src="../images/logo.jpg" alt="Flex Moving Logo" width={70} style={{ top: '-10px' }} />
             </Link>
           </Box>
-          <NavbarToggler onClick={() => setOpen(!open)} />
+          <Box>
+            <NavbarToggler onClick={() => setOpen(!open)} />
+          </Box>
           <Collapse navbar isOpen={open} className="navbar-container">
-            <Nav>
+            <Nav navbar>
               <NavItem>
                 <Link to="/" className="link-items">Home</Link>
-              </NavItem>
-              <NavItem>
-                <Link to="/our-story" className="link-items">Our story</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret style={{ color: '#000', textTransform: 'uppercase' }}>

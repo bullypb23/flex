@@ -20,13 +20,10 @@ const Footer = () => {
         </Box>
         <Box>
           <Box>
-            <Link to="/" className="active">- Home</Link>
+            <Link to="/" className="active">Home</Link>
           </Box>
           <Box>
-            <Link to="/our-story" className="active">- Our story</Link>
-          </Box>
-          <Box>
-            <Typography style={{ color: '#fff' }}>- Moving services</Typography>
+            <Typography style={{ color: '#fff' }}>Moving services</Typography>
             <Box style={{ paddingLeft: '10px' }} className="footer-nav">
               <Link to="/moving-services/local" className="footer-links active">Local</Link>
               <Link to="/moving-services/commercial" className="footer-links active">Commercial</Link>
@@ -35,7 +32,7 @@ const Footer = () => {
             </Box>
           </Box>
           <Box>
-            <Link to="/contact" className="active">- Contact</Link>
+            <Link to="/contact" className="active">Contact</Link>
           </Box>
         </Box>
       </Box>

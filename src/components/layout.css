@@ -26,6 +26,7 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: #fff;
 }
 * {
   padding: 0;
@@ -64,7 +65,7 @@ a:hover {
   width: 100%;
   min-height: 800px;
   max-width: 100vw;
-  background: url("../images/home-page.jpeg");
+  background: url("../images/home.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -109,6 +110,10 @@ a:hover {
   font-size: 24px;
   padding-top: 10px;
 }
+.nav-wrapper {
+  flex: 1 1 100%;
+  display: flex;
+}
 .form-control-container {
   display: flex;
   justify-content: center;
@@ -131,13 +136,6 @@ a:hover {
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px 0;
-}
-.services-nav-heading {
-  padding: 20px 0;
-}
-.services-nav-heading > p {
-  font-size: 2rem;
-  text-align: center;
 }
 .service-nav {
   min-height: 100px;
@@ -170,7 +168,7 @@ a:hover {
   /* max-height: 600px; */
   min-height: 700px;
   background-size: cover;
-  background-position-y: -200px;
+  background-position-y: 00px;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -254,6 +252,10 @@ a:hover {
 }
 .footer-links {
   padding:  0 10px;
+  color: #fff;
+}
+.active {
+  color: #fff;
 }
 .active:hover {
   text-decoration: underline;
@@ -395,8 +397,18 @@ a:hover {
     right: 0;
     padding: 10px;
   }
-  .services-nav-heading {
-    padding: 20px 10px;
+  .nav-wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .navbar-container {
+    flex: 1 1 100%;
+  }
+  .navbar-container > ul {
+    width: 100%;
+  }
+  .navbar-container > ul > li {
+    text-align: center;
   }
   .services-navigation {
     flex-direction: column;
