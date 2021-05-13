@@ -31,7 +31,7 @@ const Contact = () => {
             <Box className='contact-content'>
               <Typography>Flex Moving Company</Typography>
               <Typography><FaMapMarkerAlt style={{ marginRight: '5px' }} />21-48 35th Street, 11105 Astoria NY</Typography>
-              <Typography><FaAt style={{ marginRight: '5px' }} /><a href="mailto:zarkoflexmoving@gmail.com" style={{ color: '#055793', textDecoration: 'underline' }}>zarkoflexmoving@gmail.com</a></Typography>
+              <Typography><FaAt style={{ marginRight: '5px' }} /><a href="mailto:flexmovingnyc@gmail.com" style={{ color: '#055793', textDecoration: 'underline' }}>flexmovingnyc@gmail.com</a></Typography>
               <Typography>
                 <a className="contact-phone-link" href="tel:+(425) 870-4368"><FaPhoneSquareAlt style={{ marginRight: '5px' }} />(425) 870-4368</a>
               </Typography>

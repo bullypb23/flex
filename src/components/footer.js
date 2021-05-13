@@ -13,7 +13,7 @@ const Footer = () => {
             <img src={logo} alt="Flex Moving Logo" width={100} />
           </Box>
           <Typography className="footer-paragraph">Flex Moving Company NYC</Typography>
-          <Typography className="footer-paragraph">Email: zarkoflexmoving@gmail.com</Typography>
+          <Typography className="footer-paragraph">Email: flexmovingnyc@gmail.comm</Typography>
           <Typography className="footer-paragraph">Address: 21-48 35th Street, 11105 Astoria NY</Typography>
           <Typography className="footer-paragraph">Phone: <a href="tel:(425) 870-4368">(425) 870-4368</a></Typography>
           <Typography className="footer-paragraph">Working hours: Mon-Fri: 9AM - 7PM, Sat: 9AM - 5PM, Sun: Closed</Typography>
