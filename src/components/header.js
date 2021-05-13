@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import { FaPhoneSquareAlt } from "@react-icons/all-files/fa/FaPhoneSquareAlt";
 import { Box } from '@material-ui/core';
 import { Navbar, NavbarToggler, Collapse, Nav, NavItem, Container, UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu } from 'reactstrap';
@@ -10,6 +9,7 @@ import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
 import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 import { FaBox } from "@react-icons/all-files/fa/FaBox";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
+import logo from '../images/logo.jpg';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
         <Box className="nav-wrapper">
           <Box>
             <Link to="/" style={{ margin: '0 20px' }}>
-              <StaticImage src="../images/logo.jpg" alt="Flex Moving Logo" width={70} style={{ top: '-10px' }} />
+              <img src={logo} alt="Flex Moving Logo" width={70} style={{ top: '-10px' }} />
             </Link>
           </Box>
           <Box>

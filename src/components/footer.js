@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Typography } from "@material-ui/core";
-import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import Map from "./map";
+import logo from "../images/logo-transparent.png"
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
       <Box className="footer-container">
         <Box className="footer-info">
           <Box>
-            <StaticImage src="../images/logo-transparent.png" alt="Flex Moving Logo" width={100} />
+            <img src={logo} alt="Flex Moving Logo" width={100} />
           </Box>
           <Typography className="footer-paragraph">Flex Moving Company NYC</Typography>
           <Typography className="footer-paragraph">Email: zarkoflexmoving@gmail.com</Typography>
