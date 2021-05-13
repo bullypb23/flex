@@ -29,7 +29,7 @@ const Form = () => {
         message: message,
       }, 'user_xiOAGWe7JXz0AAssd5bdQ')
         .then(response => {
-          toast.success('Email is successfuly sent!');
+          toast.info('Email is successfuly sent!');
           setEmail('');
           setName('');
           setMessage('');

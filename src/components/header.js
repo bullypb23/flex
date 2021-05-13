@@ -9,15 +9,17 @@ import { FaStoreAlt } from "@react-icons/all-files/fa/FaStoreAlt";
 import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
 import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 import { FaBox } from "@react-icons/all-files/fa/FaBox";
+import { FaBars } from "@react-icons/all-files/fa/FaBars";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <Navbar expand="md" id="navbar" style={{ padding: '5px 0 0 0' }}>
       <Container fluid className="header-container">
-        <Box style={{ flex: '1 1 100%', textAlign: 'right', paddingRight: '10px' }}>
-          <a href="tel:+4258704368" style={{ color: '#000', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
-            <FaPhoneSquareAlt style={{ marginRight: '10px' }} />425-870-4368
+        <Box className="header-phone">
+          <a className="header-phone-link" href="tel:+4258704368">
+            <FaPhoneSquareAlt style={{ marginRight: '10px' }} />
+            425-870-4368
           </a>
         </Box>
         <Box className="nav-wrapper">
@@ -27,7 +29,7 @@ const Header = () => {
             </Link>
           </Box>
           <Box>
-            <NavbarToggler onClick={() => setOpen(!open)} />
+            <NavbarToggler onClick={() => setOpen(!open)} style={{ border: '1px solid #444', marginRight: '10px' }}><FaBars style={{ color: '#444' }} /></NavbarToggler>
           </Box>
           <Collapse navbar isOpen={open} className="navbar-container">
             <Nav navbar>

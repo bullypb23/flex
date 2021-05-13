@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography } from "@material-ui/core";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
+import Map from "./map";
 
 const Footer = () => {
   return (
@@ -11,14 +12,13 @@ const Footer = () => {
           <Box>
             <StaticImage src="../images/logo-transparent.png" alt="Flex Moving Logo" width={100} />
           </Box>
-          <Box className="footer-company">
-            <Typography className="footer-paragraph">Flex Moving Company NYC</Typography>
-            <Typography className="footer-paragraph">Email: zackflexmoving@gmail.com</Typography>
-            <Typography className="footer-paragraph">Address: 21-48 35th Street, 11105 Astoria NY</Typography>
-            <Typography className="footer-paragraph">Phone: <a href="tel:+4258704368">425-870-4368</a></Typography>
-          </Box>
+          <Typography className="footer-paragraph">Flex Moving Company NYC</Typography>
+          <Typography className="footer-paragraph">Email: zackflexmoving@gmail.com</Typography>
+          <Typography className="footer-paragraph">Address: 21-48 35th Street, 11105 Astoria NY</Typography>
+          <Typography className="footer-paragraph">Phone: <a href="tel:+4258704368">425-870-4368</a></Typography>
+          <Typography className="footer-paragraph">Working hours: Mon-Fri: 9AM - 7PM, Sat: 9AM - 5PM, Sun: Closed</Typography>
         </Box>
-        <Box>
+        <Box className="footer-links-container">
           <Box>
             <Link to="/" className="active">Home</Link>
           </Box>
@@ -29,15 +29,19 @@ const Footer = () => {
               <Link to="/moving-services/commercial" className="footer-links active">Commercial</Link>
               <Link to="/moving-services/long-distance" className="footer-links active">Long distance</Link>
               <Link to="/moving-services/storage" className="footer-links active">Storage</Link>
+              <Link to="/moving-services/packing" className="footer-links active">Packing ad unpacking</Link>
             </Box>
           </Box>
           <Box>
             <Link to="/contact" className="active">Contact</Link>
           </Box>
         </Box>
+        <Box className="footer-map">
+          <Map mapWidth={280} />
+        </Box>
       </Box>
       <Box className="footer-copyright">
-        <Typography style={{ fontSize: '0.8rem' }}>Copyright Flex Moving NYC© - {new Date().getFullYear()}</Typography>
+        <Typography style={{ fontSize: '0.8rem', textAlign: 'center' }}>Copyright Flex Moving NYC© - {new Date().getFullYear()}</Typography>
       </Box>
     </Box>
   )
