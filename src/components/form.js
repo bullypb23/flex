@@ -23,11 +23,11 @@ const Form = () => {
     } else {
       setIsValidForm(true);
       setSending(true);
-      emailjs.send('gmail', 'flex-moving', {
+      emailjs.send(process.env.GATSBY_EMAIL_PROVIDER, process.env.GATSBY_EMAIL_NAME, {
         name: name,
         email: email,
         message: message,
-      }, 'user_xiOAGWe7JXz0AAssd5bdQ')
+      }, process.env.GATSBY_EMAIL_ID)
         .then(response => {
           toast.info('Email is successfuly sent!');
           setEmail('');
