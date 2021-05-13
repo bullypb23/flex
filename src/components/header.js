@@ -17,9 +17,9 @@ const Header = () => {
     <Navbar expand="md" id="navbar" style={{ padding: '5px 0 0 0' }}>
       <Container fluid className="header-container">
         <Box className="header-phone">
-          <a className="header-phone-link" href="tel:+4258704368">
+          <a className="header-phone-link" href="tel:(425) 870-4368">
             <FaPhoneSquareAlt style={{ marginRight: '10px' }} />
-            425-870-4368
+            (425) 870-4368
           </a>
         </Box>
         <Box className="nav-wrapper">
