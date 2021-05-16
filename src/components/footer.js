@@ -29,7 +29,7 @@ const Footer = () => {
               <Link to="/moving-services/commercial" className="footer-links active">Commercial</Link>
               <Link to="/moving-services/long-distance" className="footer-links active">Long distance</Link>
               <Link to="/moving-services/storage" className="footer-links active">Storage</Link>
-              <Link to="/moving-services/packing" className="footer-links active">Packing ad unpacking</Link>
+              <Link to="/moving-services/packing" className="footer-links active">Packing and unpacking</Link>
             </Box>
           </Box>
           <Box>
