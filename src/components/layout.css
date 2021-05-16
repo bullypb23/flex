@@ -488,7 +488,12 @@ a:hover {
     padding-right: 0;
   }
   .service-heading {
-    font-size: 3rem;
+    font-size: 2.7rem;
+  }
+  .service-info {
+    width: 100%;
+    padding: 0 15px;
+    left: 0;
   }
   .nav-wrapper {
     justify-content: space-between;
