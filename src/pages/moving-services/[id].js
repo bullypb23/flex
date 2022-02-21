@@ -8,6 +8,7 @@ import { data } from '../../utils/movingServicesData';
 const Services = (props) => {
   const { id } = props.params;
   const [serviceData, setServiceData] = useState();
+
   useEffect(() => {
     if (id) {
       setServiceData(data[id]);

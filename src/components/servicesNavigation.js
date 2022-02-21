@@ -2,43 +2,66 @@ import React from 'react';
 import { Link } from "gatsby";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
 import { FaStoreAlt } from "@react-icons/all-files/fa/FaStoreAlt";
-import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
 import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 import { FaBox } from '@react-icons/all-files/fa/FaBox';
+import { FaTruck } from '@react-icons/all-files/fa/FaTruck';
 import { Box } from "@material-ui/core";
 
 const ServicesNavigation = () => {
   return (
-    <div className="services-navigation">
-      <Box className="service-nav">
-        <Link to="/moving-services/local">
-          <Box>Local</Box>
-          <FaHome />
-        </Link>
+    <div>
+      <Box>
+        <h1 className="info-heading">What Flex Moving offers to our clients...</h1>
       </Box>
-      <Box className="service-nav">
-        <Link to="/moving-services/commercial">
-          <Box>Commercial</Box>
-          <FaStoreAlt />
-        </Link>
-      </Box>
-      <Box className="service-nav">
-        <Link to="/moving-services/long-distance">
-          <Box>Long distance</Box>
-          <FaFlagUsa />
-        </Link>
-      </Box>
-      <Box className="service-nav">
-        <Link to="/moving-services/storage">
-          <Box>Storage</Box>
-          <FaWarehouse />
-        </Link>
-      </Box>
-      <Box className="service-nav">
-        <Link to="/moving-services/packing">
-          <Box>Packing</Box>
-          <FaBox />
-        </Link>
+      <Box className="services-navigation">
+        <Box className="service-nav">
+          <Link to="/moving-services/residental">
+            <Box className="icon-background">
+              <FaHome />
+            </Box>
+            <Box>Residental</Box>
+          </Link>
+        </Box>
+        <Box className="service-nav">
+          <Link to="/moving-services/commercial">
+            <Box className="icon-background">
+              <FaStoreAlt />
+            </Box>
+            <Box>Commercial</Box>
+          </Link>
+        </Box>
+        <Box className="service-nav">
+          <Link to="/moving-services/long-distance">
+            <Box className="icon-background">
+              <FaTruck />
+            </Box>
+            <Box>Long distance</Box>
+          </Link>
+        </Box>
+        <Box className="service-nav">
+          <Link to="/moving-services/storage">
+            <Box className="icon-background">
+              <FaWarehouse />
+            </Box>
+            <Box>Storage</Box>
+          </Link>
+        </Box>
+        <Box className="service-nav">
+          <Link to="/moving-services/arts">
+            <Box className="icon-background">
+              <FaWarehouse />
+            </Box>
+            <Box>Arts</Box>
+          </Link>
+        </Box>
+        <Box className="service-nav">
+          <Link to="/moving-services/packing">
+            <Box className="icon-background">
+              <FaBox />
+            </Box>
+            <Box>Packing/unpacking</Box>
+          </Link>
+        </Box>
       </Box>
     </div>
   )

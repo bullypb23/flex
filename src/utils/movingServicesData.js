@@ -1,15 +1,16 @@
-import local from '../images/local.jpeg';
+import residental from '../images/residental.png';
 import commercial from '../images/commercial.jpg';
-import longDistance from '../images/long-distance.jpg';
-import storage from '../images/storage.jpg';
-import packing from '../images/packing.jpg';
+import longDistance from '../images/long-distance.png';
+import storage from '../images/storage.png';
+import packing from '../images/packing.png';
+import arts from '../images/arts.png';
 
 export const data = {
-  local: {
+  residental: {
     text: 'A local move is not an easy task as at first, it might appear. With the local move, you need people who know the streets, dedicated crew that is ready to work quickly and in flexible ways. You need efficiency and effectiveness That is why you should go with us, Flex Moving Company. When you choose us, you’re enlisting movers who have helped thousands of customers with local moving in the Tri State area. Our team has earned an online and offline reputation of being one of the most trusted local moving companies in NYC area is proud of. The Flex Moving team has designed each of our moving services to be a streamlined quality experience for our clients, ensuring the right technology, equipment, and team members come together to deliver the best service to you.',
-    img: local,
-    title: 'Local moving services',
-    name: 'Local service',
+    img: residental,
+    title: 'Residental moving services',
+    name: 'Residental service',
   },
   commercial: {
     text: 'Our commercial movers are professional, reliable and highly trained experts in commercial relocations. We have designed each of our moving services to be a streamlined quality experience for our clients, ensuring the right technology, equipment, and team members come together to deliver the best service to your organization. It’s what makes us the most trusted moving company in NYC! From moving inventory for a small cafe to moving office equipment for a large corporate relocation, we’ve helped organizations of all sizes with their move. Commercial Flex movers are here to provide you with all the necessary support in order for you to experience a breeze and stress-free relocation of your business. Get streamlined with a stress-free yet cost-efficient office relocation by using our professional office and corporate relocation services. Don\'t let moving get in the way of your work, let our team of professionals handle any packing or unpacking your organization needs so that you can keep doing what you do.',
@@ -35,5 +36,11 @@ export const data = {
     img: packing,
     title: 'Packing and unpacking services',
     name: 'Packing and unpacking',
-  }
+  },
+  arts: {
+    text: 'We are New York-based branded company specializing in handling and moving fine art, antiques, luxury items, and collectibles of all kinds. We providing a full range of artwork services to private collectors, art dealers, galleries, artists, and auction houses. Our specialty includes moving paintings, decorative fine art objects, large marble statues, metal sculptures, vintage furniture, antique pianos, and other valuable and expensive items of any size and weight. In addition to all types of the artwork transport we also offers a variety of other essential services, including art packing, museum-quality crating, art storage, art shuttles, white glove courier delivery, and art installation. Our mission is to provide our clients with customized fine art moving and handling solutions of the highest quality while maintaining the affordability of all our services. Flex Moving operates both across the United States and internationally, offering a variety of cost-effective air and sea transportation options, making our company the number one choice for many reputable art business professionals and art lovers.',
+    img: arts,
+    title: 'Arts',
+    name: 'Arts',
+  },
 }
