@@ -4,8 +4,16 @@ import SEO from "../components/seo";
 import Form from "../components/form";
 import ServicesNavigation from "../components/servicesNavigation";
 import Reviews from "../components/reviews";
+import FlexImages from "../components/flexImages";
 import { Typography, Box } from "@material-ui/core";
 import { data } from "../utils/homePageData";
+import department from "../images/department-of-transportation.png";
+import newYorkDepartment from "../images/new-york-department.jpg";
+import ucr from "../images/ucr.png";
+import { FaFacebookSquare } from '@react-icons/all-files/fa/FaFacebookSquare';
+import { FaTwitterSquare } from '@react-icons/all-files/fa/FaTwitterSquare';
+import { FaInstagramSquare } from '@react-icons/all-files/fa/FaInstagramSquare';
+import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin';
 
 const IndexPage = () => {
   return (
@@ -13,7 +21,7 @@ const IndexPage = () => {
       <SEO title="Flex Moving New York" />
       <div className="home-page-wrapper" >
         <div className="home-page-overflow">
-          <h3>Looking for amazing moving experience?</h3>
+          <h3>Get you moving quote</h3>
           <Form />
         </div>
       </div>
@@ -46,14 +54,69 @@ const IndexPage = () => {
       </Box>
       <Box className="info-container">
         <Box style={{ width: '80%' }}>
-          <h1 className="data-heading">Our satisfied clients speaking instead of us..</h1>
+          <h1 className="data-heading">Our satisfied clients speaking instead of us...</h1>
           <Reviews />
+        </Box>
+      </Box>
+      <Box className="info-container">
+        <Box style={{ width: '80%' }}>
+          <h1 className="data-heading">Officially autorized and licensed by:</h1>
+          <Box className="image-wrapper">
+            <img
+              src={department}
+              alt="USA Department of transportation"
+              style={{ width: 150, height: 150 }}
+            />
+            <img
+              src={newYorkDepartment}
+              alt="New York Department of transportation"
+              style={{ height: 200 }}
+            />
+            <img
+              src={ucr}
+              alt="USA Department of transportation"
+              style={{ width: 150, height: 150 }}
+            />
+          </Box>
+        </Box>
+      </Box>
+      <Box className="info-container">
+        <Box style={{ width: '80%' }}>
+          <h1 className="data-heading">Flex Moving in images...</h1>
+          {/* <FlexImages /> */}
         </Box>
       </Box>
       <Box className="info-container">
         <Box style={{ width: '80%' }}>
           <h1 className="data-heading">COVID - 19 RESPONSES</h1>
           <Typography className="service-paragraph">As the country responds to the pandemic of COVID-19, our thoughts are with the people affected and the medical professionals working around the clock to help those most in need. At Flex Moving Company, we are working to do our part as an ESSENTIAL BUSINESS by ensuring the safety of our employees, striving to protect the health and well-being of the communities in which we operate and providing relocation services and resources to our customers to make their move as safe as possible. We have taken great care in following the guidelines provided by the CDC to ensure our facilities, staff and equipment are safe and sanitary.</Typography>
+        </Box>
+      </Box>
+      <Box className="info-container">
+        <Box style={{ width: '80%' }}>
+          <h1 className="data-heading">Follow us on:</h1>
+          <Box className="logo-wrapper">
+            <Box className="logo">
+              <a href="" style={{ color: '#3b5998' }}>
+                <FaFacebookSquare />
+              </a>
+            </Box>
+            <Box className="logo">
+              <a href="" style={{ color: '#00acee' }}>
+                <FaTwitterSquare />
+              </a>
+            </Box>
+            <Box className="logo">
+              <a href="">
+                <FaInstagramSquare className="instagram-logo" />
+              </a>
+            </Box>
+            <Box className="logo">
+              <a href="" style={{ color: '#0077b5' }}>
+                <FaLinkedin />
+              </a>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Layout>

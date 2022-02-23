@@ -84,7 +84,7 @@ a:hover {
   align-items: center;
 }
 .link-items:hover, .dropdown-item:hover {
-  color: #055793;
+  color: #b1d328;
 }
 .home-page-wrapper {
   width: 100%;
@@ -105,12 +105,12 @@ a:hover {
   position: absolute;
   width: 20%;
   min-width: 300px;
-  max-width: 350px;
+  max-width: 380px;
   min-height: 300px;
-  background-color: #fff;
+  background-color: #9BA7B2;
   border-radius: 20px;
   bottom: 10%;
-  right: 10%;
+  left: 10%;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -120,21 +120,74 @@ a:hover {
   font-size: 24px;
   padding-top: 10px;
 }
+.image-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 100px;
+  cursor: pointer;
+}
+/* .instagram-logo { */
+  /* background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); */
+  /* color: #fff; */
+/* } */
 .nav-wrapper {
   flex: 1 1 100%;
   display: flex;
 }
 .form-control-container {
   display: flex;
-  justify-content: center;
-  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5px;
   max-width: 400px;
+}
+.form-control-container.center {
+  align-items: center;
+}
+.form-control-radio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.form-control-radio {
+  display: flex;
+  justify-content: center;
+}
+.radio {
+  padding: 5px;
+  background-color: #fff;
+  color: #444;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 30px;
+  text-align: center;
+}
+.radio-selected {
+  background: #CAE265;
 }
 .input {
   width: 100%;
 }
+.input.small {
+  max-width: 200px;
+  background-color: #fff;
+  border-radius: 4px;
+}
 .input.textarea {
   resize: none;
+  overflow: scroll;
+  max-height: 200px;
 }
 .invalid-paragraph {
   color: red;
@@ -219,7 +272,7 @@ a:hover {
 }
 .info-container {
   width: 100%;
-  padding: 50px 0;
+  padding: 25px 0;
   display: flex;
   justify-content: center;
 }
@@ -502,6 +555,9 @@ a:hover {
     justify-content: center;
     padding-left: 0;
   }
+  /* .Mui-focused > input {
+    border: 1px solid #CAE265 !important;
+  } */
   .form-wrapper {
     display: flex;
     flex-direction: column;
