@@ -10,10 +10,10 @@ const Form = () => {
   const [message, setMessage] = useState('');
   const [isValidForm, setIsValidForm] = useState(true);
   const [sending, setSending] = useState(false);
-  const [movingFromZipCode, setMovingFromZipCode] = useState();
-  const [movingToZipCode, setMovingToZipCode] = useState();
+  const [movingFromZipCode, setMovingFromZipCode] = useState('');
+  const [movingToZipCode, setMovingToZipCode] = useState('');
   const [phone, setPhone] = useState('');
-  const [apartmentSize, setApartmentSize] = useState();
+  const [apartmentSize, setApartmentSize] = useState('');
 
   const validateEmail = (emailValue) => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -31,12 +31,19 @@ const Form = () => {
         name: name,
         email: email,
         message: message,
+        movingFrom: movingFromZipCode,
+        movingTo: movingToZipCode,
+        phone: phone,
+        apartmentSize: apartmentSize,
       }, process.env.GATSBY_EMAIL_ID)
         .then(response => {
           toast.info('Email is successfuly sent!');
           setEmail('');
           setName('');
           setMessage('');
+          setMovingFromZipCode('');
+          setMovingToZipCode('');
+          setApartmentSize('');
         })
         .catch(error => {
           toast.error('Something went wrong with sending email! Please try again!');
@@ -91,7 +98,6 @@ const Form = () => {
           <Box className={`radio ${apartmentSize === '4' && 'radio-selected'}`} onClick={() => setApartmentSize('4')}>4</Box>
           <Box className={`radio ${apartmentSize === '4>' && 'radio-selected'}`} onClick={() => setApartmentSize('4>')}>4&gt;</Box>
         </Box>
-        {/* <TextField label="Name" className="input" value={name} onChange={(event) => setName(event.target.value)} size="small" /> */}
       </Box>
       <Box className="form-control-container center">
         <Box component="span">Name:</Box>

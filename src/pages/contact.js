@@ -4,7 +4,7 @@ import SEO from '../components/seo';
 import Map from '../components/map';
 import Form from '../components/form';
 import { Box, Typography } from '@material-ui/core';
-import logo from '../images/logo-transparent.png';
+import logo from '../images/logo.png';
 import useWindowSize from '../utils/useWindowSize';
 import { FaMapMarkerAlt } from "@react-icons/all-files/fa/FaMapMarkerAlt";
 import { FaAt } from "@react-icons/all-files/fa/FaAt";
@@ -18,11 +18,11 @@ const Contact = () => {
     <Layout>
       <SEO title="Contact" />
       <Box className='map-wrapper'>
-        <Box style={{ flex: '1 1 40%', padding: '0 10px' }}>
+        <Box style={{ flex: '1 1 30%', padding: '0 10px' }}>
           <Typography style={{ fontSize: '2rem' }} className='contact-header'>Have any question? Ask us anything</Typography>
           <Form />
         </Box>
-        <Box style={{ flex: '1 1 60%', flexWrap: 'wrap' }}>
+        <Box style={{ flex: '1 1 70%', flexWrap: 'wrap' }}>
           <Map mapWidth={350} />
           <Box>
             <Box>

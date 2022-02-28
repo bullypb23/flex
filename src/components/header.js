@@ -9,6 +9,7 @@ import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
 import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 import { FaBox } from "@react-icons/all-files/fa/FaBox";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
+import { FaTruck } from '@react-icons/all-files/fa/FaTruck';
 import logo from '../images/logo.png';
 
 const Header = () => {
@@ -51,7 +52,7 @@ const Header = () => {
                     Commercial
                   </DropdownItem>
                   <DropdownItem tag={Link} to="/moving-services/long-distance" className="dropdown-item">
-                    <FaFlagUsa style={{ marginRight: '5px' }} />
+                    <FaTruck style={{ marginRight: '5px' }} />
                     Long distance
                   </DropdownItem>
                   <DropdownItem tag={Link} to="/moving-services/storage" className="dropdown-item">

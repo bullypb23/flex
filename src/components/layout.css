@@ -172,6 +172,7 @@ a:hover {
   border-radius: 5px;
   min-width: 30px;
   text-align: center;
+  border: 1px solid #444;
 }
 .radio-selected {
   background: #CAE265;
@@ -209,10 +210,6 @@ a:hover {
 .service-nav {
   min-height: 100px;
   padding: 15px 25px;
-}
-.service-nav:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease-in-out;
 }
 .service-nav a {
   font-size: 32px;
@@ -324,7 +321,7 @@ a:hover {
 }
 .footer {
   width: 100%;
-  background-color: #444;
+  background-color: #C7D0D8;
 }
 .footer-container {
   display: flex;
@@ -343,14 +340,41 @@ a:hover {
   display: flex;
   justify-content: flex-end;
 }
+.footer-links-wrapper {
+  margin: 0 50px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-link > a {
+  font-size: 1.5rem;
+  color: #455A64 !important;
+  padding: 0 20px;
+}
 .footer-links-container {
   flex: 1 1 20%;
   padding-left: 30px;
   border-right: 1px solid #B89D27;
 }
 .footer-paragraph {
-  color: #fff;
-  font-size: 0.8rem !important;
+  color: #455A64;
+  font-size: 1rem !important;
+}
+.footer-paragraph > a {
+  color: #455A64;
+}
+.footer-paragraph > a:hover {
+  text-decoration: underline;
+  color: #455A64;
+}
+.footer-info-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 30px;
 }
 .footer-nav {
   display: flex;
@@ -361,19 +385,19 @@ a:hover {
   justify-content: center;
   padding: 10px;
   border-top: 1px solid #fff;
-  color: #fff;
+  color: #455A64;
   margin: 0 50px;
 }
 .footer-links {
   padding:  0 10px;
-  color: #fff;
+  color: #455A64;
 }
 .active {
-  color: #fff;
+  color: #455A64;
 }
 .active:hover {
   text-decoration: underline;
-  color: #fff;
+  color: #455A64;
 }
 .spinner-wrapper {
   width: 100vw;
@@ -418,27 +442,27 @@ a:hover {
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
  }
- .sa-folding-box .sa-box_2{
+ .sa-folding-box .sa-box_2 {
   -webkit-transform:scale(1.1) rotateZ(90deg);
   transform:scale(1.1) rotateZ(90deg);
  }
- .sa-folding-box .sa-box_3{
+ .sa-folding-box .sa-box_3 {
   -webkit-transform:scale(1.1) rotateZ(180deg);
   transform:scale(1.1) rotateZ(180deg);
  }
- .sa-folding-box .sa-box_4{
+ .sa-folding-box .sa-box_4 {
   -webkit-transform:scale(1.1) rotateZ(270deg);
   transform:scale(1.1) rotateZ(270deg);
  }
- .sa-folding-box .sa-box_2:before{
+ .sa-folding-box .sa-box_2:before {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
  }
- .sa-folding-box .sa-box_3:before{
+ .sa-folding-box .sa-box_3:before {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
  }
- .sa-folding-box .sa-box_4:before{
+ .sa-folding-box .sa-box_4:before {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
  }
