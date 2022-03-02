@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Box } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { images } from '../utils/images';
@@ -8,11 +8,11 @@ const FlexImages = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 2
+      items: 3
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -35,10 +35,10 @@ const FlexImages = () => {
       autoPlaySpeed={3000}
       keyBoardControl={true}
       sliderClass="carousel-container"
+      itemClass="carousel-item-image"
     >
-      {images.map((img, number) => (
-        <Box key={number}>
-          <img src={img.src} alt={img.alt} />
+      {images.map((img, index) => (
+        <Box key={index} className="image-carousel-container" style={{ backgroundImage: `url(${img.src})`}}>
         </Box>
       ))}
     </Carousel>

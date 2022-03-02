@@ -267,6 +267,15 @@ a:hover {
 .carousel-container {
   transition: transform 1s ease-in-out !important;
 }
+.image-carousel-container {
+  max-width: 400px;
+  margin: 20px;
+  background-size: cover;
+  min-height: 400px;
+}
+.carousel-item-image {
+  max-width: 400px;;
+}
 .info-container {
   width: 100%;
   padding: 25px 0;

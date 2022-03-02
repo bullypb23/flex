@@ -5,7 +5,6 @@ import { Box } from '@material-ui/core';
 import { Navbar, NavbarToggler, Collapse, Nav, NavItem, Container, UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu } from 'reactstrap';
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
 import { FaStoreAlt } from "@react-icons/all-files/fa/FaStoreAlt";
-import { FaFlagUsa } from "@react-icons/all-files/fa/FaFlagUsa";
 import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 import { FaBox } from "@react-icons/all-files/fa/FaBox";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
