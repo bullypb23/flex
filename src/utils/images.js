@@ -9,25 +9,31 @@ export const images = [
   {
     src: flex1,
     alt: 'Flex Moving New York',
+    backgroundPositionX: 0,
   },
   {
     src: flex2,
     alt: 'Flex Moving New York',
+    backgroundPositionX: 0,
   },
   {
     src: flex3,
     alt: 'Flex Moving New York',
+    backgroundPositionX: -200,
   },
   {
     src: flex4,
     alt: 'Flex Moving New York',
+    backgroundPositionX: 0,
   },
   {
     src: flex5,
     alt: 'Flex Moving New York',
+    backgroundPositionX: 0,
   },
   {
     src: flex6,
     alt: 'Flex Moving New York',
+    backgroundPositionX: -100,
   },
 ];

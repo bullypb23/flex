@@ -15,11 +15,11 @@ const FlexImages = () => {
       items: 3
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 768 },
       items: 2
     },
     mobile: {
-      breakpoint: { max: 576, min: 0 },
+      breakpoint: { max: 768, min: 0 },
       items: 1
     }
   };
@@ -38,7 +38,7 @@ const FlexImages = () => {
       itemClass="carousel-item-image"
     >
       {images.map((img, index) => (
-        <Box key={index} className="image-carousel-container" style={{ backgroundImage: `url(${img.src})`}}>
+        <Box key={index} className="image-carousel-container" style={{ backgroundImage: `url(${img.src})`, backgroundPositionX: `${img.backgroundPositionX}px` }}>
         </Box>
       ))}
     </Carousel>

@@ -9,6 +9,7 @@ import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 import { FaBox } from "@react-icons/all-files/fa/FaBox";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 import { FaTruck } from '@react-icons/all-files/fa/FaTruck';
+import { FaPaintBrush } from '@react-icons/all-files/fa/FaPaintBrush';
 import logo from '../images/logo-removebg-preview.png';
 import useWindowSize from '../utils/useWindowSize';
 
@@ -34,7 +35,7 @@ const Header = () => {
             </Link>
           </Box>
           <Box>
-            <NavbarToggler onClick={() => setOpen(!open)} style={{ border: '1px solid #444', marginRight: '10px' }}><FaBars style={{ color: '#444' }} /></NavbarToggler>
+            <NavbarToggler onClick={() => setOpen(!open)} style={{ border: '1px solid #CAE265', marginRight: '10px' }}><FaBars style={{ color: '#CAE265' }} /></NavbarToggler>
           </Box>
           <Collapse navbar isOpen={open} className="navbar-container">
             <Nav navbar>
@@ -56,27 +57,27 @@ const Header = () => {
                   Services
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem tag={Link} to="/moving-services/residental" className="dropdown-item">
+                  <DropdownItem tag={Link} to="/moving-services/residental" className="dropdown-item" onClick={() => setOpen(false)}>
                     <FaHome style={{ marginRight: '5px' }} />
                     Residental
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/moving-services/commercial" className="dropdown-item">
+                  <DropdownItem tag={Link} to="/moving-services/commercial" className="dropdown-item" onClick={() => setOpen(false)}>
                     <FaStoreAlt style={{ marginRight: '5px' }} />
                     Commercial
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/moving-services/long-distance" className="dropdown-item">
+                  <DropdownItem tag={Link} to="/moving-services/long-distance" className="dropdown-item" onClick={() => setOpen(false)}>
                     <FaTruck style={{ marginRight: '5px' }} />
                     Long distance
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/moving-services/storage" className="dropdown-item">
+                  <DropdownItem tag={Link} to="/moving-services/storage" className="dropdown-item" onClick={() => setOpen(false)}>
                     <FaWarehouse style={{ marginRight: '5px' }} />
                     Storage
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/moving-services/arts" className="dropdown-item">
-                    <FaWarehouse style={{ marginRight: '5px' }} />
+                  <DropdownItem tag={Link} to="/moving-services/arts" className="dropdown-item" onClick={() => setOpen(false)}>
+                    <FaPaintBrush style={{ marginRight: '5px' }} />
                     Arts
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/moving-services/packing" className="dropdown-item">
+                  <DropdownItem tag={Link} to="/moving-services/packing" className="dropdown-item" onClick={() => setOpen(false)}>
                     <FaBox style={{ marginRight: '5px' }} />
                     Packing and unpacking
                   </DropdownItem>

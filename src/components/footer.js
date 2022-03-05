@@ -28,24 +28,6 @@ const Footer = () => {
             <Typography className="footer-paragraph">Sunday Closed</Typography>
           </Box>
         </Box>
-        {/* <Box className="footer-links-container">
-          <Box>
-            <Link to="/" className="active">Home</Link>
-          </Box>
-          <Box>
-            <Typography style={{ color: '#455A64' }}>Moving services</Typography>
-            <Box style={{ paddingLeft: '10px' }} className="footer-nav">
-              <Link to="/moving-services/local" className="footer-links active">Local</Link>
-              <Link to="/moving-services/commercial" className="footer-links active">Commercial</Link>
-              <Link to="/moving-services/long-distance" className="footer-links active">Long distance</Link>
-              <Link to="/moving-services/storage" className="footer-links active">Storage</Link>
-              <Link to="/moving-services/packing" className="footer-links active">Packing and unpacking</Link>
-            </Box>
-          </Box>
-          <Box>
-            <Link to="/contact" className="active">Contact</Link>
-          </Box>
-        </Box> */}
         <Box className="footer-map">
           <Map mapWidth={350} />
         </Box>
@@ -55,7 +37,7 @@ const Footer = () => {
           <Button
             style={{ backgroundColor: '#CAE265', color: '#444', borderRadius: '20px', minWidth: 200 }}
             variant="contained"
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("#contact")}
           >
             Free Quote
           </Button>
@@ -74,6 +56,15 @@ const Footer = () => {
             </a>
           </Typography>
         </Box>
+      </Box>
+      <Box className="footer-links-container">
+        <Link to="/" className="footer-links">Home</Link>
+        <Link to="/moving-services/local" className="footer-links">Local</Link>
+        <Link to="/moving-services/commercial" className="footer-links">Commercial</Link>
+        <Link to="/moving-services/long-distance" className="footer-links">Long distance</Link>
+        <Link to="/moving-services/storage" className="footer-links">Storage</Link>
+        <Link to="/moving-services/packing" className="footer-links">Packing and unpacking</Link>
+        <Link to="/contact" className="footer-links">Contact</Link>
       </Box>
       <Box className="footer-copyright">
         <Typography className="footer-copyright-paragraph">USDOT #3610638</Typography>

@@ -5,6 +5,7 @@ import { FaStoreAlt } from "@react-icons/all-files/fa/FaStoreAlt";
 import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 import { FaBox } from '@react-icons/all-files/fa/FaBox';
 import { FaTruck } from '@react-icons/all-files/fa/FaTruck';
+import { FaPaintBrush } from '@react-icons/all-files/fa/FaPaintBrush';
 import { Box } from "@material-ui/core";
 
 const ServicesNavigation = () => {
@@ -49,7 +50,7 @@ const ServicesNavigation = () => {
         <Box className="service-nav">
           <Link to="/moving-services/arts">
             <Box className="icon-background">
-              <FaWarehouse />
+              <FaPaintBrush />
             </Box>
             <Box>Arts</Box>
           </Link>

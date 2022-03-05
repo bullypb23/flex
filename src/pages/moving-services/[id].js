@@ -14,12 +14,13 @@ const Services = (props) => {
     if (id) {
       setServiceData(data[id]);
     }
-  }, [id])
+  }, [id]);
+
   return (
     serviceData ? (
       <Layout>
         <SEO title={serviceData.title} />
-        <Box className="service-page" style={{ backgroundImage: `url(${serviceData.img})` }}></Box>
+        <Box className="service-page" style={{ backgroundImage: `url(${serviceData.img})`, backgroundPositionX: `${serviceData.backgroundPosition}px` }}></Box>
         <Box className="service-info">
           <h1 className="service-heading">{serviceData.name}</h1>
           <Typography className="service-paragraph">{serviceData.text}</Typography>

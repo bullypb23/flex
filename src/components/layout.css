@@ -4,6 +4,7 @@ html {
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -245,6 +246,8 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  max-width: 100%;
+  height: auto;
   /* justify-content: center;
   align-items: center; */
   /* background-position-y: -100px; */
@@ -277,10 +280,12 @@ a:hover {
   transition: transform 1s ease-in-out !important;
 }
 .image-carousel-container {
-  max-width: 400px;
+  /* max-width: 400px; */
   margin: 20px;
   background-size: cover;
   min-height: 400px;
+  max-width: 100%;
+  height: auto;
 }
 .carousel-item-image {
   max-width: 400px;;
@@ -373,9 +378,11 @@ a:hover {
   padding: 0 20px;
 }
 .footer-links-container {
-  flex: 1 1 20%;
-  padding-left: 30px;
-  border-right: 1px solid #B89D27;
+  flex: 1 1 100%;
+  padding: 0 30px 30px;
+  display: flex;
+  justify-content: center;
+  /* border-right: 1px solid #B89D27; */
 }
 .footer-paragraph {
   color: #455A64;
@@ -395,10 +402,6 @@ a:hover {
   flex-wrap: wrap;
   padding: 0 30px;
 }
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-}
 .footer-copyright {
   display: flex;
   justify-content: center;
@@ -411,17 +414,14 @@ a:hover {
 .footer-copyright-paragraph {
   font-size: 0.8rem;
   text-align: center;
-  padding-right: 10px;
+  padding-right: 15px;
   font-weight: bold;
 }
 .footer-links {
   padding:  0 10px;
   color: #455A64;
 }
-.active {
-  color: #455A64;
-}
-.active:hover {
+.footer-links:hover {
   text-decoration: underline;
   color: #455A64;
 }
@@ -594,7 +594,13 @@ a:hover {
   }
   .service-page {
     min-height: 500px;
-    background-position-x: -150px;
+    /* background-position-x: 0px; */
+  }
+  .dropdown-menu {
+    border: none !important;
+  }
+  .dropdown-item {
+    text-align: center !important;
   }
   .map-wrapper {
     padding: 0;
@@ -623,6 +629,8 @@ a:hover {
   .footer-links-container {
     border: none;
     padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
   }
   .footer-info {
     order: 1;
@@ -641,9 +649,14 @@ a:hover {
   .form-control-container {
     min-width: 300px;
     padding: 10px 0px;
+    width: 100%;
   }
   .input {
     max-width: 200px;
+  }
+  .input.textarea {
+    width: 100%;
+    max-width: 400px;
   }
   .footer-links-wrapper {
     margin: 0 10px;
@@ -663,7 +676,7 @@ a:hover {
   .footer-container {
     flex-direction: column;
   }
-  .service-page {
+  /* .service-page {
     background-position-x: -200px;
-  }
+  } */
 }
