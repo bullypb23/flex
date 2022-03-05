@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Button } from "@material-ui/core";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import Map from "./map";
 import logo from "../images/logo-removebg-preview.png";
 import { FaPhoneSquareAlt } from "@react-icons/all-files/fa/FaPhoneSquareAlt";
@@ -55,6 +55,7 @@ const Footer = () => {
           <Button
             style={{ backgroundColor: '#CAE265', color: '#444', borderRadius: '20px', minWidth: 200 }}
             variant="contained"
+            onClick={() => navigate("/contact")}
           >
             Free Quote
           </Button>
@@ -75,10 +76,10 @@ const Footer = () => {
         </Box>
       </Box>
       <Box className="footer-copyright">
-        <Typography style={{ fontSize: '0.8rem', textAlign: 'center', paddingRight: '10px', fontWeight: 'bold' }}>USDOT #3610638</Typography>
-        <Typography style={{ fontSize: '0.8rem', textAlign: 'center', paddingRight: '10px', fontWeight: 'bold' }}>MC #1229716</Typography>
-        <Typography style={{ fontSize: '0.8rem', textAlign: 'center', paddingRight: '10px', fontWeight: 'bold' }}>NYSDOT #T-41192</Typography>
-        <Typography style={{ fontSize: '0.8rem', textAlign: 'center', paddingRight: '10px', fontWeight: 'bold' }}>Copyright Flex Moving NYC© - {new Date().getFullYear()}</Typography>
+        <Typography className="footer-copyright-paragraph">USDOT #3610638</Typography>
+        <Typography className="footer-copyright-paragraph">MC #1229716</Typography>
+        <Typography className="footer-copyright-paragraph">NYSDOT #T-41192</Typography>
+        <Typography className="footer-copyright-paragraph">Copyright Flex Moving NYC© - {new Date().getFullYear()}</Typography>
       </Box>
     </Box>
   )

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import Reviews from '../../components/reviews';
+import FlexImages from '../../components/flexImages';
 import { Box, Typography } from '@material-ui/core';
 import { data } from '../../utils/movingServicesData';
 
@@ -26,6 +27,12 @@ const Services = (props) => {
         </Box>
         <Box className="service-reviews">
           <Reviews />
+        </Box>
+        <Box className="info-container">
+          <Box style={{ width: '80%' }}>
+            <h1 className="data-heading">Flex Moving in images...</h1>
+            <FlexImages />
+          </Box>
         </Box>
       </Layout>
     ) : <></>

@@ -2,6 +2,7 @@ import React from 'react';
 import { FaAddressCard } from '@react-icons/all-files/fa/FaAddressCard';
 import { BiSupport } from '@react-icons/all-files/bi/BiSupport';
 import { FaTruck } from '@react-icons/all-files/fa/FaTruck';
+import { GrUserManager } from '@react-icons/all-files/gr/GrUserManager';
 
 export const data = [
   {
@@ -12,7 +13,7 @@ export const data = [
   {
     title: 'Professional sales representatives team...',
     text: 'Our sales team is professional and oriented to finding fast and appropriate solutions for our clients... Call our number or fill out an online form on our website and you will got your quote ASAP...',
-    icon: <BiSupport style={{ fontSize: '50px' }} />,
+    icon: <GrUserManager style={{ fontSize: '50px' }} />,
   },
   {
     title: 'Efficient and trained movers...',

@@ -19,7 +19,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Flex Moving New York" />
-      <div className="home-page-wrapper" >
+      <div className="home-page-wrapper">
         <div className="home-page-overflow">
           <h3>Get you moving quote</h3>
           <Form />

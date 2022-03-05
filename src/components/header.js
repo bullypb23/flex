@@ -9,20 +9,24 @@ import { FaWarehouse } from "@react-icons/all-files/fa/FaWarehouse";
 import { FaBox } from "@react-icons/all-files/fa/FaBox";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 import { FaTruck } from '@react-icons/all-files/fa/FaTruck';
-import logo from '../images/logo.png';
+import logo from '../images/logo-removebg-preview.png';
+import useWindowSize from '../utils/useWindowSize';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const { width } = useWindowSize();
 
   return (
     <Navbar expand="md" id="navbar" style={{ padding: '5px 0 0 0' }}>
       <Container fluid className="header-container">
-        <Box className="header-phone">
-          <a className="header-phone-link" href="tel:(929) 699-3370">
-            <FaPhoneSquareAlt style={{ marginRight: '10px' }} />
-            (929) 699-3370
-          </a>
-        </Box>
+        {width < 768 ? (
+          <Box className="header-phone">
+            <a className="header-phone-link" href="tel:(929) 699-3370">
+              <FaPhoneSquareAlt style={{ marginRight: '10px' }} />
+              (929) 699-3370
+            </a>
+          </Box>
+        ) : null}
         <Box className="nav-wrapper">
           <Box>
             <Link to="/" style={{ margin: '0 20px' }}>
@@ -34,6 +38,16 @@ const Header = () => {
           </Box>
           <Collapse navbar isOpen={open} className="navbar-container">
             <Nav navbar>
+              {width >= 768 ? (
+                <Box className="header-phone" style={{ marginRight: '30px' }}>
+                  <Box>
+                    <a className="header-phone-link" href="tel:(929) 699-3370">
+                      <FaPhoneSquareAlt style={{ marginRight: '10px' }} />
+                      (929) 699-3370
+                    </a>
+                  </Box>
+                </Box>
+              ) : null}
               <NavItem>
                 <Link to="/" className="link-items">Home</Link>
               </NavItem>
