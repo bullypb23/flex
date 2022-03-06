@@ -1,5 +1,5 @@
 import residental from '../images/residental.png';
-import commercial from '../images/commercial.jpg';
+import commercial from '../images/commercial.png';
 import longDistance from '../images/long-distance.png';
 import storage from '../images/storage.png';
 import packing from '../images/packing.png';
@@ -26,7 +26,7 @@ export const data = {
     img: longDistance,
     title: 'Long distance moving services',
     name: 'Long distance service',
-    backgroundPosition: 0
+    backgroundPosition: -400
   },
   storage: {
     text: 'Storage facilities are quite important nowadays, especially so if you are living or moving around a big city such as our beloved New York With living spaces ever tighter and your needs ever greater, you need a reliable storage service. You need a storage service designed as they were always meant to be, for your convenience! In other words, you need the Flex Moving Company storage units. Flex Moving Company has helped countless New Yorkers with their storage and move needs. If you’re in need of a short-term or long-term storage option, leave it to our team. We’ll handle all of the heavy lifting, from picking up your items from your home or business to the secure drop off of your belongings. Easily get pricing and reserve your pickup time in minutes with our team! Our loading-unloading service will make sure to put everything in its place in no time whatsoever. Our team of professionals will promptly pick up your items and move them to our secure, storage facility. When you’re ready, we’ll deliver your items right back to your doorstep. As previously said, our team is dedicated to the best possible moving services NYC can provide! This means that your items will be at your doorstep the moment you need them! Just tell us when and where!',

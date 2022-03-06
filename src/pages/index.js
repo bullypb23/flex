@@ -27,7 +27,7 @@ const IndexPage = () => {
       </div>
       <Box className="info-container">
         <Box style={{ width: '80%' }}>
-          <h1 className="info-heading">About Flex Moving...</h1>
+          <h1 className="data-heading">About Flex Moving...</h1>
           <Typography className="service-paragraph">The friendship that began ten years ago back home in Europe has grown into partnership here in the United States. We spent six years working in the largest NYC moving companies gaining experience in all aspects of moving industry before making Flex moving as well-known company. We wanted to form a moving company that kept its word. A company dedicated to making a difference in the lives of its clients, team members and community. A moving company who offers service that puts a smile on the faces of our customers. Our services include local, intrastate, long distance, international, residential and commercial moves as well storage service and warehousing. Whether you are moving your apartment or house or your businesses in NYC area or out of state Flex Moving is there as your only and best choice for a long-term period. As a trusted moving company our moving service ensure every aspect of your move to be coherent and stress free.</Typography>
         </Box>
       </Box>

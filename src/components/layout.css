@@ -220,9 +220,10 @@ a:hover {
 .service-nav {
   min-height: 100px;
   padding: 15px 25px;
+  min-width: 195px;
 }
 .service-nav a {
-  font-size: 32px;
+  font-size: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -651,8 +652,14 @@ a:hover {
     padding: 10px 0px;
     width: 100%;
   }
+  .form-control-container > span {
+    font-size: 16px;
+  }
   .input {
     max-width: 200px;
+  }
+  .input.small {
+    max-width: 180px;
   }
   .input.textarea {
     width: 100%;

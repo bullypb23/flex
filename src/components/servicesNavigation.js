@@ -12,7 +12,7 @@ const ServicesNavigation = () => {
   return (
     <div>
       <Box>
-        <h1 className="info-heading">What Flex Moving offers to our clients...</h1>
+        <h1 className="data-heading">What Flex Moving offers to our clients...</h1>
       </Box>
       <Box className="services-navigation">
         <Box className="service-nav">
@@ -60,7 +60,7 @@ const ServicesNavigation = () => {
             <Box className="icon-background">
               <FaBox />
             </Box>
-            <Box>Packing/unpacking</Box>
+            <Box>Packing</Box>
           </Link>
         </Box>
       </Box>

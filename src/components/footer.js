@@ -63,6 +63,7 @@ const Footer = () => {
         <Link to="/moving-services/commercial" className="footer-links">Commercial</Link>
         <Link to="/moving-services/long-distance" className="footer-links">Long distance</Link>
         <Link to="/moving-services/storage" className="footer-links">Storage</Link>
+        <Link to="/moving-services/arts" className="footer-links">Arts</Link>
         <Link to="/moving-services/packing" className="footer-links">Packing and unpacking</Link>
         <Link to="/contact" className="footer-links">Contact</Link>
       </Box>
