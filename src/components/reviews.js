@@ -24,6 +24,7 @@ const Reviews = () => {
       items: 1
     }
   };
+
   return (
     <Carousel
       responsive={responsive}
