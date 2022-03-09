@@ -18,11 +18,11 @@ const Contact = () => {
     <Layout>
       <SEO title="Contact" />
       <Box className='map-wrapper'>
-        <Box style={{ flex: '1 1 30%', padding: '0 10px' }}>
+        <Box className="contact-form-wrapper">
           <Typography style={{ fontSize: '2rem' }} className='contact-header'>Have any question? Ask us anything</Typography>
           <Form />
         </Box>
-        <Box style={{ flex: '1 1 70%', flexWrap: 'wrap' }}>
+        <Box style={{ flex: '1 1 70%', flexWrap: 'wrap', padding: '0 20px' }}>
           <Map mapWidth={350} />
           <Box>
             <Box>

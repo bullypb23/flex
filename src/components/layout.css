@@ -337,7 +337,7 @@ a:hover {
 .map-wrapper {
   padding: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   width: 80%;
   left: 10%;
@@ -425,6 +425,11 @@ a:hover {
 .footer-links:hover {
   text-decoration: underline;
   color: #455A64;
+}
+.contact-form-wrapper {
+  flex: 1 1 30%;
+  max-width: 400px;
+  padding: 0 10px 20px;
 }
 .spinner-wrapper {
   width: 100vw;
