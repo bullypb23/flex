@@ -22,6 +22,9 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+legend {
+  width: 0px !important;
+}
 .Toastify__toast {
   border-radius: 10px;
 }
