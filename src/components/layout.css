@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
 }
 legend {
-  width: 0px !important;
+  display: none !important;
 }
 .Toastify__toast {
   border-radius: 10px;
