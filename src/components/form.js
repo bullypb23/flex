@@ -20,6 +20,8 @@ const Form = () => {
     return re.test(String(emailValue).toLowerCase());
   }
 
+  console.log(process.env.GATSBY_EMAIL_ID)
+
   const handleFormSubmit = () => {
     if (!name || !message || !validateEmail(email) || !phone || !movingFromZipCode || !movingToZipCode || !apartmentSize) {
       setIsValidForm(false);
