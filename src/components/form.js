@@ -20,8 +20,6 @@ const Form = () => {
     return re.test(String(emailValue).toLowerCase());
   }
 
-  console.log(process.env.GATSBY_EMAIL_ID)
-
   const handleFormSubmit = () => {
     if (!name || !message || !validateEmail(email) || !phone || !movingFromZipCode || !movingToZipCode || !apartmentSize) {
       setIsValidForm(false);
@@ -29,6 +27,9 @@ const Form = () => {
     } else {
       setIsValidForm(true);
       setSending(true);
+      console.log(process.env.GATSBY_EMAIL_PROVIDER)
+      console.log(process.env.GATSBY_EMAIL_NAME)
+      console.log(process.env.GATSBY_EMAIL_ID)
       emailjs.send(process.env.GATSBY_EMAIL_PROVIDER, process.env.GATSBY_EMAIL_NAME, {
         name: name,
         email: email,
