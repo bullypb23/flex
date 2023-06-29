@@ -27,10 +27,7 @@ const Form = () => {
     } else {
       setIsValidForm(true);
       setSending(true);
-      console.log(process.env.GATSBY_EMAIL_PROVIDER)
-      console.log(process.env.GATSBY_EMAIL_NAME)
-      console.log(process.env.GATSBY_EMAIL_ID)
-      emailjs.send(process.env.GATSBY_EMAIL_PROVIDER, process.env.GATSBY_EMAIL_NAME, {
+      emailjs.send('gmail', 'flex-moving', {
         name: name,
         email: email,
         message: message,
@@ -38,7 +35,7 @@ const Form = () => {
         movingTo: movingToZipCode,
         phone: phone,
         apartmentSize: apartmentSize,
-      }, process.env.GATSBY_EMAIL_ID)
+      }, 'user_xiOAGWe7JXz0AAssd5bdQ')
         .then(response => {
           toast.info('Email is successfuly sent!');
           setEmail('');
